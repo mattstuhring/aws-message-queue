@@ -1,4 +1,3 @@
-
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 import com.amazonaws.services.sqs.model.SendMessageRequest;
@@ -7,7 +6,7 @@ import com.amazonaws.services.sqs.model.SendMessageBatchRequestEntry;
 
 public class Send {
 
-    public static void send() {
+    public static void main(String[] args) {
         final AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
 
         String queueUrl = sqs.getQueueUrl("QueueA").getQueueUrl();
